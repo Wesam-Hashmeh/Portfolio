@@ -5,215 +5,770 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wesam Hashmeh</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Wesam's 'Professional' Website </title>
+  <meta name="title" content="Wesam's 'professional' website">
+  <meta name="description" content="This is my website that will host blogs and projects I have made">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
 </head>
 
-<body>
-  <section id="about-me">
-    <nav>
-      <div class="personal__logo">Wesam Hashmeh</div>
-      <ul class="nav__link--list">
-        <li class="nav__link">
-          <a href="#languages" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Languages</a>
-        </li>
-        <li class="nav__link">
-          <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Projects</a>
-        </li>
-        <li class="nav__link">
-          <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=wesam.hashmeh@gmail.com" class="
-            nav__link--anchor
-            nav__link--anchor-primary
-          ">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="flex flex-1">
-      <div class="about-me__info row">
-        <div class="about-me__info--container">
-          <figure class="about-me__picture--mask">
-            <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/me.jpg" class="about-me__picture" alt="Picture of Me!">
-          </figure>
-          <h1 class="about-me__info--title">
-            Hey! I'm <span class="text--purple">Wesam Hashmeh</span>&nbsp;<span class="wave">👋</span>
-          </h1>
-          <p class="about-me__info--para">
-            I'm a <strong class="text--purple"> passionate programmer </strong> with a strong passion for the field of robotics and AI/Machine Learning.
-            I hope to one day use my skills and knowledge to change the world for the better!
-          </p>
-          <div class="about-me__links">
-            <a href="https://www.linkedin.com/in/wesam-hashmeh/" class="about-me__link">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Wesam-Hashmeh" class="about-me__link">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=wesam.hashmeh@gmail.com" class="about-me__link">
-              <i class="far fa-envelope"></i>
-            </a>
-            <a href="https://drive.google.com/file/d/1zPUG7kD44x3U1icY5P8xEG0AImJFIrdi/view" target="_blank" class="about-me__link">
-              <i class="fas fa-file-pdf"></i>
-            </a>
-          </div>
-        </div>
-        <figure class="about-me__img--container">
-          <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/14f0631cf0af6740cf187a6442726fa4fbfb4228/undraw_websites.svg" class="about-me__img" alt="">
-        </figure>
-      </div>
-    </div>
-  </section>
+<body id="top">
 
-  <section id="languages">
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
     <div class="container">
-      <div class="row">
-        <h1 class="section__title">This is my <span class="text--purple">technology stack</span></h1>
-        <div class="language__list">
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img
-                src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/java.png"
-                alt="Java Logo" class="language__img" />
-            </figure>
-            <span class="language__name">Java</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/python.png" alt="Python Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">Python</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/c%2B%2B.png" alt="C++ Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">C++</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/sql.png"
-                alt="SQL Logo" class="language__img" />
-            </figure>
-            <span class="language__name">SQL</span>
-          </div>
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/HTML.png" alt="HTML Logo"
-                class="language__img" />
-            </figure>
-            <span class="language__name">HTML</span>
-          </div>
-         
-          
-          <div class="language">
-            <figure class="language__img--wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/CSS.png" alt="CSS Logo" class="language__img" />
-            </figure>
-            <span class="language__name">CSS</span>
-          </div>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="section__title">Here are some of my <span class="text--purple">projects</span></h1>
-        <ul class="project__list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/FRC_Logo.svg.png" class="project__img" alt="FRC_Logo">
-              <div class="project__description">
-                <h3 class="project__description--title">FRC Robotics Code</h3>
-                <h3 class="project__description--title">2019 - 2021</h3>
-                <h4 class="project__description--sub-title">
-                  Java
-                </h4>
-                <p class="project__description--para">
-                  I am currently a mentor for team UniBots, 7237. Prevoiusly being the lead programmer, I have been able to program a variety of autonomous and teleoperated
-                  functions to control the robot and its mechanisms. 
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/Wesam-Hashmeh" target="_blank" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://frc-events.firstinspires.org/team/7237" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
           </li>
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/DBMS.jpg" class="project__img" alt="Hospital_DBMS">
-              <div class="project__description">
-                <h3 class="project__description--title">Hospital DBMS</h3>
-                <h3 class="project__description--title">2022</h3>
-                <h4 class="project__description--sub-title">
-                  Java, SQL
-                </h4>
-                <p class="project__description--para">
-                  A database management system designed to work for general hospital use. This project connects a java application to a data base and allows functions such as doctor look up, matching blood type organ donars and more.
-                </p>
-                <div class="project__description--links">
-                  <a href="https://github.com/Wesam-Hashmeh/Hospital-DBMS" target="_blank" class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+
+          <li>
+            <a href="#projects" class="navbar-link hover-1" data-nav-toggler>Projects</a>
           </li>
+
+          <li>
+            <a href="#featured" class="navbar-link hover-1" data-nav-toggler> Articles </a>
+          </li>
+
+          <li>
+            <a href="#tags" class="navbar-link hover-1" data-nav-toggler>Tags</a>
+          </li>
+
+          <li>
+            <a href="#tags" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+          </li>
+
         </ul>
-      </div>
+
+        <div class="navbar-bottom">
+
+          <div class="profile-card">
+            <img src="./assets/images/author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
+
+            <div>
+              <p class="card-title">Hello world!</p>
+
+            </div>
+          </div>
+
+        </div>
+
+        <p class="copyright-text">
+          Copyright 2023 © Wesam.
+          Developed with the help of opensource templates
+        </p>
+
+      </nav>
+
+         <!-- 
+        - #lINK RESUME HERE
+      -->
+      <a href="https://drive.google.com/file/d/1demMYmtMnR5PYmGPbAwal3a82GKwHTg6/view?usp=sharing" class="btn btn-primary">Resume</a> 
+   
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
     </div>
-  </section>
-  <footer>
-    <div class="row footer__row">
-      <a href="#" class="footer__anchor">
-        <figure class="footer__logo">
-          <img src="https://raw.githubusercontent.com/Wesam-Hashmeh/Portfolio/main/log.png" class="footer__logo--img" alt="">
-        </figure>
-        <span class="footer__logo--popper">
-          Top
-          <i class="fas fa-arrow-up"></i>
-        </span>
-      </a>
-      <div class="footer__social--list">
-        <a href="https://github.com/Wesam-Hashmeh" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/wesam-hashmeh/" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">LinkedIn</a>
-        <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=wesam.hashmeh@gmail.com" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">Email</a>
-        <a href="https://drive.google.com/file/d/1zPUG7kD44x3U1icY5P8xEG0AImJFIrdi/view" target="_blank" class="
-          footer__social--link
-          link__hover-effect
-          link__hover-effect--white
-        " target="_blank">Resume</a>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello World!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I’m <span class="span">Wesam Hashmeh</span>
+            </h1>
+
+            <p class="hero-text">
+              I am an Illinois Institute of Technology student pursuing a dual degree in BS and MS in Artificial Intelligence. With my programming skills and knowledge of AI, I'm passionate about developing innovative solutions and making a positive impact in the field. I have a strong foundation in understanding and implementing AI algorithms, and I'm actively involved in the CS community on campus. I am eager to continue learning and contributing to the field through internships, research, and other opportunities.
+            </p>
+
+           
+
+          </div>
+
+          <div class="hero-banner">
+
+           <img src="./assets/images/wesam.png" alt="Wesam Hashmeh"  class="w-100"> 
+
+            <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="./assets/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #Projects
+      -->
+
+      <section class="projects" id="projects" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                Projects!
+              </h2>
+
+              <p class="card-text">
+                I am currently trying to focus on ML related projects but here's what I've got!
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="https://github.com/Wesam-Hashmeh/IBM-Image-Processing" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/Stars.jpg" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Space Image Processing</span>
+
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/chess.jpg" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">ML Chess Bot</span>
+  
+
+                
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="https://github.com/Wesam-Hashmeh/FRC-7237-2021-Code" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/ezgif-1-ff8ad3c7e2.gif" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Computer Vision Robot</span>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="https://github.com/Wesam-Hashmeh/FRC-7237-2020-Code" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/ezgif.com-gif-maker (1).gif" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Autonomous Robot</span>
+
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/topic-5.png" width="507" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Controllable Robot</span>
+
+                    <!--<p class="slider-subtitle">78 Articles</p> #You can use this as a possible description? -->
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Articles!</span>
+          </h2>
+
+          <p class="section-text">
+            Here are some recent Articles that I have written!
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-1.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Travel</a>
+
+                      <a href="#" class="span hover-2">#Lifestyle</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 mins read</span>
+                    </div>
+                  </div>
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                   
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-3.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <!--
+                    <div class="profile-card">
+                      <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+                  -->
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-4.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./assets/images/featured-5.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-secondary">
+            <span class="span">Show More Posts</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg" > 
+
+      </section>
+
+      <!-- 
+        - #Article Tags
+      -->
+
+      <section class="tags" aria-labelledby="tag-label" id="tags" >
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" >
+            <span class="span">Tags</span>
+          </h2>
+
+          <p class="section-text">
+            Articles related to tags
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag1.png" width="32" height="32" loading="lazy" alt="ML">
+
+                <p class="btn-text">ML</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag2.png" width="32" height="32" loading="lazy" alt="NLP">
+
+                <p class="btn-text">NLP</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag3.png" width="32" height="32" loading="lazy" alt="Deep Learning">
+
+                <p class="btn-text">Deep Learning</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag4.png" width="40" height="40" loading="lazy" alt="Computer Vision">
+
+                <p class="btn-text">Computer Vision</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag5.png" width="32" height="32" loading="lazy" alt="Bruh">
+
+                <p class="btn-text">General AI</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./assets/images/tag6.png" width="40" height="32" loading="lazy" alt="Space">
+
+                <p class="btn-text">Space</p>
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+        <section class="section recent-post"  aria-labelledby="recent-label" >
+
+        </section>
+
+      </article>
+    </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer >
+    <div class="container"  >
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="Wren logo">
+            </a>
+
+            <p class="footer-text">
+              When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
+              unknown prnoto sans took a galley and scrambled it to five centurie.
+            </p>
+
+            <p class="footer-list-title" >Contact</p>
+
+            <address class="footer-text address" >
+              Number : (708) 770 - 7447 <br>
+              Email : wesam.hashmeh@gmail.com
+            </address>
+
+          </div>
+
+          <div class="footer-list">
+
+       
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">PSSSST</p>
+
+            <p class="footer-text">
+             If you would like to have my cureent resume emailed to you :D
+            </p>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                autocomplete="off">
+
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1demMYmtMnR5PYmGPbAwal3a82GKwHTg6/view?usp=sharing" class="btn btn-primary">
+              <span class="span">Resume</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Developed by <a href="#" class="copyright-link">Wesam Hashmeh</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://github.com/Wesam-Hashmeh" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+
+                <span class="span">Github</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/wesam-hashmeh" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:wesam.hashmeh@gmail.com?subject = Feedback&body = Message" class="social-link">
+                <ion-icon name="logo-google"></ion-icon>
+
+                <span class="span">email</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
       </div>
-      <div class="footer__copyright">Copyright © 2022 Wesam Hashmeh </div>
+
     </div>
   </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
-</html>
+</html> 
