@@ -111,3 +111,37 @@ window.addEventListener("resize", function () {
 
   moveSliderItem();
 });
+
+
+/**
+ * Send resume
+ */
+
+function sendResumeByEmail() {
+  const name = document.querySelector('input[name="name"]').value;
+  const email = document.querySelector('input[name="email_address"]').value;
+  
+  // Your EmailJS service ID and template ID go here
+  const serviceID = 'YOUR_SERVICE_ID';
+  const templateID = 'YOUR_TEMPLATE_ID';
+  
+  // The template parameters that will be sent to EmailJS
+  const templateParams = {
+    name: name,
+    email: email,
+    resume: 'https://drive.google.com/file/d/1demMYmtMnR5PYmGPbAwal3a82GKwHTg6/view?usp=sharing' // URL to your resume file
+  };
+  
+  // Send the email using EmailJS
+  emailjs.send(serviceID, templateID, templateParams)
+    .then(function(response) {
+      console.log('Email sent successfully:', response);
+      alert('Your resume has been sent!');
+    }, function(error) {
+      console.error('Error sending email:', error);
+      alert('An error occurred while sending your resume. Please try again later.');
+    });
+}
+
+
+
