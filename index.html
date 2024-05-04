@@ -38,6 +38,17 @@
   <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
   <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
 
+
+
+
+  <style>
+    .tab {
+        display: inline-block;
+        margin-left: 50px;
+    }
+</style>
+
+
 </head>
 
 <body id="top">
@@ -58,24 +69,12 @@
           </button>
         </div>
 
+
         <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
-          </li>
-
-          <li>
-            <a href="#projects" class="navbar-link hover-1" data-nav-toggler>Projects</a>
-          </li>
-
-          <li>
-            <a href="#featured" class="navbar-link hover-1" data-nav-toggler> Demo </a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contact</a>
-          </li>
-
+          <li><a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a></li>
+          <li><a href="#projects" class="navbar-link hover-1" data-nav-toggler>Projects</a></li>
+          <li><a href="#certifications-skills" class="navbar-link hover-1" data-nav-toggler>Certifications & Skills</a></li>
+          <li><a href="#contact" class="navbar-link hover-1" data-nav-toggler>Contact + Links</a></li>
         </ul>
 
         <div class="navbar-bottom">
@@ -101,7 +100,7 @@
          <!-- 
         - #lINK RESUME HERE
       -->
-      <a href="https://drive.google.com/file/d/1_fk0lIGVzQbenGN4EcvStlcN0e6mRep-/view?usp=sharing" class="btn btn-primary">Resume</a> 
+      <a href="#resume" class="btn btn-primary">Resume</a> 
    
 
       <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
@@ -134,7 +133,10 @@
             </h1>
 
             <p class="hero-text">
-              I am an Illinois Institute of Technology student pursuing a dual degree in BS and MS in Artificial Intelligence. With my programming skills and knowledge of AI, I'm passionate about developing innovative solutions and making a positive impact in the field. I have a strong foundation in understanding and implementing AI algorithms, and I'm actively involved in the CS community on campus. I am eager to continue learning and contributing to the field through internships, research, and other opportunities.
+              I am an Illinois Institute of Technology student pursuing a dual degree in BS and MS in Artificial Intelligence. With my programming skills and 
+              knowledge of AI, I'm passionate about developing innovative solutions and making a positive impact in the field. I have a strong foundation in 
+              understanding and implementing AI algorithms, and I'm actively involved in the CS community on campus. I am eager to continue learning and contributing
+               to the field through internships, research, and other opportunities.
             </p>
 
            
@@ -143,7 +145,7 @@
 
           <div class="hero-banner">
 
-           <img src="./assets/images/Wesam.png" alt="Wesam Hashmeh"  class="w-100"> 
+           <img src="./assets/images/Wesam.jpg" alt="Wesam Hashmeh"  class="w-100"> 
 
             <img src="./assets/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
 
@@ -180,7 +182,7 @@
               <p class="card-text">
                 I am currently trying to focus on ML related projects but here's what I've got!
               </p>
-
+              
               <div class="btn-group">
                 <button class="btn-icon" aria-label="previous" data-slider-prev>
                   <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
@@ -189,12 +191,40 @@
                 <button class="btn-icon" aria-label="next" data-slider-next>
                   <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                 </button>
+
+                
               </div>
 
             </div>
 
+            
+
+
+            
+
+
+
+
+
             <div class="slider" data-slider>
               <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="https://github.com/TIFScrapingOrg/DataScraping" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/tifs.jpg" width="510" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Unlocking Historical Financial Data Through a Machine Learning Pipeline</span>
+
+                    </div>
+
+                  </a>
+                </li>
+
 
                 <li class="slider-item">
                   <a href="https://github.com/Wesam-Hashmeh/IBM-Swift-Image-Processing" class="slider-card">
@@ -212,23 +242,6 @@
                   </a>
                 </li>
 
-                <li class="slider-item">
-                  <a href="https://github.com/Wesam-Hashmeh/steam-sentiment-analysis" class="slider-card">
-
-                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
-                      <img src="./assets/images/chess.jpg" width="507" height="618" loading="lazy" alt="Travel"
-                        class="img-cover">
-                    </figure>
-
-                    <div class="slider-content">
-                      <span class="slider-title">Review Predictor</span>
-  
-
-                
-                    </div>
-
-                  </a>
-                </li>
 
                 <li class="slider-item">
                   <a href="https://github.com/Wesam-Hashmeh/FRC-7237-2021-Code" class="slider-card">
@@ -262,6 +275,33 @@
                 </li>
 
 
+
+
+
+
+                <li class="slider-item">
+                  <a href="https://github.com/Wesam-Hashmeh/steam-sentiment-analysis" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="./assets/images/chess.jpg" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Review Predictor</span>
+  
+
+                
+                    </div>
+
+                  </a>
+                </li>
+
+
+
+
+
+
               <!-- 
 
                 <li class="slider-item">
@@ -283,250 +323,61 @@
 
               </ul>
             </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURED POST
-      -->
-
-      <section class="section feature" aria-label="feature" id="featured">
-        <div class="container">
-
-          <h2 class="headline headline-2 section-title">
-            <span class="span">Demos (Coming soon)!</span>
-          </h2>
-
-          <p class="section-text">
-            Here are demos of various projects I have done!
-          </p>
-
-          <ul class="feature-list">
-
-            <li>
-              <div class="card feature-card">
-
-                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
-                    alt="Sentiment Analysis : Naive Bayes vs ML Library" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="wrapper">
-                 
-
-                      <span class="span"></span>
-                    </div>
-                  </div>
-                  <h3 class="headline headline-3">
-                    <a href="#" class="card-title hover-2">
-                      Game Review Rating predictor
-                    </a>
-                  </h3>
-
-                  <div class="card-wrapper">
-
-                   
-
-                    <a href="#" class="card-btn">Link</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card feature-card">
-
-                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
-                    alt="Computer vision Robot" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="wrapper">
-               
-
-                      <span class="span"></span>
-                    </div>
-                  </div>
-
-                  <h3 class="headline headline-3">
-                    <a href="#" class="card-title hover-2">
-                      Computer Vision Robot
-                    </a>
-                  </h3>
-
-                  <div class="card-wrapper">
-
-                    <a href="#" class="card-btn">Link</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card feature-card">
-
-                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
-                    alt="Demo Coming Soon" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-
-                    <div class="wrapper">
-                    </div>
-                  </div>
-
-                  <h3 class="headline headline-3">
-                    <a href="#" class="card-title hover-2">
-                      Demo Coming Soon
-                    </a>
-                  </h3>
-
-                  <div class="card-wrapper">
-                    <!--
-                    <div class="profile-card">
-                      <img src="./assets/images/author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
-                        class="profile-banner">
-
-                      <div>
-                        <p class="card-title">Joseph</p>
-
-                        <p class="card-subtitle">25 Nov 2022</p>
-                      </div>
-                    </div>
-                  -->
-                    <a href="#" class="card-btn">Read more</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card feature-card">
-
-                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
-                    alt="Demo Coming Soon" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="wrapper">
-                    </div>
-                  </div>
-
-                  <h3 class="headline headline-3">
-                    <a href="#" class="card-title hover-2">
-                      Demo Coming Soon
-                    </a>
-                  </h3>
-
-                  <div class="card-wrapper">
-
-
-
-                    <a href="#" class="card-btn">Read more</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="card feature-card">
-
-                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
-                  <img src="./assets/images/featured-2.png" width="1602" height="903" loading="lazy"
-                    alt="Demo Coming Soon" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="wrapper">
-              
-                    </div>
-                  </div>
-
-                  <h3 class="headline headline-3">
-                    <a href="#" class="card-title hover-2">
-                      Demo Coming Soon
-                    </a>
-                  </h3>
-
-                  <div class="card-wrapper">
-
-
-                    <a href="#" class="card-btn">Read more</a>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <a href="#" class="btn btn-secondary">
-            <span class="span">More Demos soon</span>
-              <!-- 
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-              -->
             
-          </a>
-
+          </div>
+          
         </div>
-
-        <img src="./assets/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg" > 
-
+        
       </section>
 
-      <!-- 
-        - #Article Tags
-      -->
+
+  <!-- Certifications and Skills Section -->
 
 
-
-      <!-- 
-        - #RECENT POST
-      -->
 
 
       </article>
+      
     </main>
+    <section class="section feature" id="certifications-skills" aria-label="Certifications and Skills">
+      <div class="container">
+          <h2 class="headline headline-2 section-title">Certifications & Skills</h2>
+          <div class="card">
+              <div class="card-content">
+                  <h3 class="headline-3">Certifications</h3>
+                  <ul>
+                      <li>Open Project Developer</li>
+                      <li>(Studying for) AWS Cloud Practitioner</li>
+                  </ul>
+                  <h3 class="headline-3">Skills</h3>
+                  <div class="skills-grid">
+                      <ul>
+                          <li>• Machine Learning (SKlearn, Pyrotch, TensorFlow)</li>
+                          <li>• Data Scraping + Processing</li>
+                          <li>• Data Mining</li>
+                          <li>• Amazon S3 + RDS</li>
+                      </ul>
+                      <ul>
+                          <li>• Natural Language Processing</li>
+                          <li>• Image Segmentation</li>
+                          <li>• Accuracy and Validation analysis</li>
+                          <li>• Python, SQL, R, Java</li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
+  <!-- Resume Section -->
+<section class="resume-section" id="resume">
+  <div class="container">
+    <h2 class="headline headline-2 section-title">My Resume</h2>
 
+      <iframe src="assets\images\Wesam_Hashmeh_resume.pdf" width="100%"  height="1150px"style="border: none;" frameborder="0"></iframe>
+  </div>
+</section>
 
 
 
@@ -536,12 +387,21 @@
 
   <footer >
 
-  <section class="contact" id="contact" aria-label="contact">
+    
+
+
+  <section class="section feature" aria-label="feature" id="contact">
     <div class="container"  >
 
       <div class="card footer">
 
         <div class="section footer-top">
+          <p class="footer-list-title">
+            If you would like to get in touch with me, feel free to reach out to me using any of the following contact methods:
+          </p>
+
+            <p class="footer-list-title" >Contact</p>
+
 
           <div class="footer-brand">
           <!-- 
@@ -549,17 +409,10 @@
               <img src="./assets/images/logo.svg" width="119" height="37" loading="lazy" alt="Wren logo">
             </a>
           -->
+          <address class="footer-text address" >
+            Email : wesam.hashmeh@gmail.com
+          </address>
 
-            <p class="footer-text">
-              If you would like to get in touch with me, feel free to reach out to me using any of the following contact methods:
-            </p>
-
-            <p class="footer-list-title" >Contact</p>
-
-            <address class="footer-text address" >
-              Number : (708) 770 - 7447 <br>
-              Email : wesam.hashmeh@gmail.com
-            </address>
 
           </div>
 

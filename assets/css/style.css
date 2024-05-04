@@ -112,10 +112,32 @@
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
 
+
+  #certifications-skills .card {
+    border-radius: 15px; /* Adjust this value to increase or decrease the roundness */
+    overflow: hidden; /* Ensures that any child elements also conform to the rounded corners */
+  }
+
+}
+#certifications-skills .card-content {
+  padding-left: 20px;  /* Adds padding to the left of the content */
 }
 
+#certifications-skills ul {
+  padding-left: 20px;  /* Adjusts the position of the bullet points if needed */
+}
 
+/* Certifications & Skills Section Bullet Points Styling */
+#certifications-skills .card-content ul {
+  list-style-type: disc;  /* Ensure disc type bullet points */
+  list-style-position: inside; /* Position bullets inside the list area to avoid clipping */
+  padding-left: 20px;    /* Add indentation to align bullets nicely */
+  margin-left: 0;        /* Adjust according to your layout needs */
+}
 
+#certifications-skills .card-content ul li {
+  margin-bottom: 10px;   /* Space between list items */
+}
 
 
 /*-----------------------------------*\
@@ -689,17 +711,47 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.resume-section .container {
+  max-width: 1000px; /* Limit the width for better readability */
+  max-height: 1000px; /* Limit the width for better readability */
+  margin: auto; /* Center align the container */
+  padding: 10px; /* Add some padding around the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  background:  #061c2b; /* Optional: Sets a background color */
+  border-radius: 20px; /* Optional: Rounds the corners */
+}
+
+/* Add to the section above the footer or the main content area */
+.resume-section, .main-content {
+  margin-bottom: 150px; /* Adjust this value as needed */
+}
 
 .footer {
-  padding-inline: 20px;
+  padding-inline: 2px;
   border-radius: var(--radius-48);
   color: var(--text-wild-blue-yonder);
   margin-block-end: 10px;
+  position: relative; /* Change to 'relative' if it's 'absolute' or 'fixed' without adequate spacing */
+  width: 100%;
+  margin-top: 0;
+  z-index: 1; /* Lower or adjust z-index if it's unusually high */
 }
 
 .footer-top {
   display: grid;
   gap: 1px;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skills-grid ul {
+  list-style-type: disc; /* Ensure disc type bullet points */
+  padding-left: 10px; /* Adjust padding to align bullet points */
 }
 
 .footer-brand .footer-text { font-size: var(--fontSize-6); }
