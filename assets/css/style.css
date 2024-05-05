@@ -378,6 +378,7 @@ body.nav-active { overflow: hidden; }
   gap: 10px;
 }
 
+
 .nav-open-btn,
 .nav-close-btn {
   color: var(--text-wild-blue-yonder);
@@ -754,6 +755,19 @@ body.nav-active { overflow: hidden; }
   padding-left: 10px; /* Adjust padding to align bullet points */
 }
 
+
+
+.skills-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 150px;
+}
+
+.skills-grid2 ul {
+  list-style-type: disc; /* Ensure disc type bullet points */
+  padding-left: 0px; /* Adjust padding to align bullet points */
+}
+
 .footer-brand .footer-text { font-size: var(--fontSize-6); }
 
 .footer-text:not(.address) { margin-block: 10px; }
@@ -982,7 +996,7 @@ body.nav-active { overflow: hidden; }
 
   .recent-post-card {
     grid-template-columns: 0.5fr 1fr;
-    gap: 20px;
+    gap: 10px;
   }
 
   .pagination-btn {
@@ -1083,7 +1097,7 @@ body.nav-active { overflow: hidden; }
     display: grid;
     grid-template-columns: 0.3fr 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
 
 
